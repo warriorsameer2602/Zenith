@@ -10,7 +10,7 @@ const app = express();
 const port = 3000;
 
 // Initialize Google GenAI
-const ai = new GoogleGenAI({ apiKey: "AIzaSyDGm_3HU1wxhwRvM8MBAQWyQfh60FwDfAE" });
+const ai = new GoogleGenAI({ apiKey: process.env.AIzaSyDGm_3HU1wxhwRvM8MBAQWyQfh60FwDfAE });
 const History = [];
 
 app.use(express.json());
